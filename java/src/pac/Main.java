@@ -1,6 +1,6 @@
 package pac; 
 
-public class main {
+public class Main {
 	public static void main(String[] args) {
 		// number of request allowed to be in buffer, and number of slave threads
 		int N = 10;
