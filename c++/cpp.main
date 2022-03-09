@@ -1,22 +1,53 @@
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <pthread.h>
+#include<stdio.h>
+#include<string.h>
+#include<pthread.h>
+#include<stdlib.h>
+#include<unistd.h>
+#include <semaphore.h>
 
 class main { 
-BoundedBuffer boundedBuffer = new BoundedBuffer(N)
-Int m = 10;
-Int M = 1; 
+int N = 10;
+int M = 1; 
 
-public Foo(){ 
-lock = new SimpleLock(); 
-c1 = lock.newCondition(); 
-c2 = lock.newCondition(); … 
+BoundedBuffer boundedBuffer = new BoundedBuffer(N)
+
+int requestID = 1;
+int requestLength = 0;
+Request r = null;
+
+while(true) {
+			
+			try {
+				// make masterThread sleep for random amount of time
+				sleep(thread)*(int)((Math.random()*N) *1000);
+			
+				// calculate request length
+				requestLength = (int)(Math.random() * M + 1);
+				
+//				Producer: produced request ID n, length t seconds at time CURRENT-TIME
+//				Producer: sleeping for X seconds
+				
+				//create new request
+				r = new Request(requestId++, requestLength);
+				printf("Producer: produced request ID %d, length %d seconds at time %d\n", requestId, requestId, System.currentTimeMillis());
+				//add request to bounded buffer
+				boundedBuffer.addRequest(r);
+				
+				producerSleepTimer = (int)((Math.random()*4));
+				
+				System.out.printf("Producer: sleeping for %d seconds\n", producerSleepTimer);
+				
+				// make masterThread sleep for random amount of time
+				Thread.sleep(producerSleepTimer*1000);
+				
+				
+				
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			
+			
+		}
+	}
 }
- public void doSomething(…)
-{ 
-try{ lock.lock();
- … 
-Catch(InterruptedException e){ 
-e.printStackTrace();
-} 
