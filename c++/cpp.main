@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+class main { 
+BoundedBuffer boundedBuffer = new BoundedBuffer(N)
+Int m = 10;
+Int M = 1; 
+
+public Foo(){ 
+lock = new SimpleLock(); 
+c1 = lock.newCondition(); 
+c2 = lock.newCondition(); … 
+}
+ public void doSomething(…)
+{ 
+try{ lock.lock();
+ … 
+Catch(InterruptedException e){ 
+e.printStackTrace();
+} 
