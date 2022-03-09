@@ -6,6 +6,49 @@
 #include<unistd.h>
 #include <semaphore.h>
 
+class BoundedBuffer{
+	public;
+		void Producer();
+		void Consumer();
+	private;
+		items buffer;
+		semaphore mutex;
+		semaphore empty;
+		semaphore full;
+	
+}
+BoundedBuffer ::BoundedBuffer(int N) {
+	mutex.value = 1;
+	empty value = N;
+	
+	full.value = 0;
+	new buffer[N];
+}
+
+BoundedBuffer::Producer(){
+	<produce item>
+	empty.Wait();
+	mutex.Wait();
+	
+	addRequest(); // add item
+	
+	mutex.Signal();
+	full.Signal()
+}
+
+BoundedBuffer::Consumer(){
+	full.Wait();
+	mutex.Wait();
+	
+	removeRequest(); // remove item
+	
+	mutex.Signal();
+	empty.Signal(;
+	
+	// use item
+
+}
+
 class semaphore{
 	public;
 		void Wait(Process P);
@@ -33,52 +76,6 @@ if (value <= 0) {
 	wakeup(P);
 }
 }
-
-class BoundedBuffer{
-	public;
-		void Producer();
-		void Consumer();
-	private;
-		items buffer;
-	semaphore mutex;
-	semaphore empty;
-	semaphore full;
-	
-}
-BoundedBuffer ::BoundedBuffer(int N) {
-	mutex.value = 1;
-	empty value = N;
-	
-	full.value = 0;
-	new buffer[N];
-}
-
-BoundedBuffer::Producer(){
-	<produce item>
-	empty.Wait();
-	mutex.Wait();
-	
-	addRequest();
-	*add item
-	
-	mutex.Signal();
-	full.Signal()
-}
-
-BoundedBuffer::Consumer(){
-	full.Wait();
-	mutex.Wait();
-	
-	removeRequest();
-	*remove item
-	
-	mutex.Signal();
-	empty.Signal*(;
-	
-	*use item*
-
-}
-
 
 
 // riley's java for reference
