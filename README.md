@@ -16,4 +16,4 @@ The Main class makes a bounded buffer and then runs in an infinite loop creating
 To run the java version first install the java development kit
 1. run : sudo apt install openjdk-11-jdk
 2. navigate from the project root directory to where the java code is using: cd java/src 
-3. run: make -f makefile //to compile and run the java version of the progect
+3. run: make -f makefile //to compile and run the java version of the project
