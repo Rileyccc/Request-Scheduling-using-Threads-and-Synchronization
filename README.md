@@ -14,6 +14,6 @@ The BoundedBuffer class is a monitor class. This class contains an array of requ
 The Main class makes a bounded buffer and then runs in an infinite loop creating request then adding them to the bounded buffer. In addition, the main class is where the producer creates new request and prints infromation about the request and producer.
 
 To run the java version first install the java development kit
-1. sudo apt install openjdk-11-jdk
-2. navigate from the project root directory to where the java code is using cd java/src 
-3. run make -f makefile to compile and run the java version of the progect
+1. run : sudo apt install openjdk-11-jdk
+2. navigate from the project root directory to where the java code is using: cd java/src 
+3. run: make -f makefile //to compile and run the java version of the progect
