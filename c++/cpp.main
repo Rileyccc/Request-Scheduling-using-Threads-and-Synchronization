@@ -36,7 +36,7 @@ while(true) {
 				
 				producerSleepTimer = (int)((Math.random()*4));
 				
-				System.out.printf("Producer: sleeping for %d seconds\n", producerSleepTimer);
+				printf("Producer: sleeping for %d seconds\n", producerSleepTimer);
 				
 				// make masterThread sleep for random amount of time
 				Thread.sleep(producerSleepTimer*1000);
