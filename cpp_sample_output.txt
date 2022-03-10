@@ -1,0 +1,28 @@
+Producer: produced request ID 1, length 1 seconds at time 1646872276
+Producer: sleeping for 1 seconds
+Consumer 1646872276: assigned request ID 1, processing request for the next 1 seconds
+Producer: produced request ID 2, length 2 seconds at time 1646872277
+Consumer 140495510345472: completed request ID 1 at time 1646872277
+Producer: sleeping for 3 seconds
+Consumer 1646872277: assigned request ID 2, processing request for the next 1 seconds
+Consumer 140495510345472: completed request ID 2 at time 1646872278
+Producer: produced request ID 3, length 3 seconds at time 1646872280
+Producer: sleeping for 0 seconds
+Producer: produced request ID 4, length 4 seconds at time 1646872280
+Producer: sleeping for 3 seconds
+Consumer 1646872280: assigned request ID 4, processing request for the next 1 seconds
+Consumer 140495535523584: completed request ID 4 at time 1646872281
+Consumer 1646872281: assigned request ID 3, processing request for the next 1 seconds
+Consumer 140495585879808: completed request ID 3 at time 1646872282
+Producer: produced request ID 5, length 5 seconds at time 1646872283
+Producer: sleeping for 2 seconds
+Consumer 1646872283: assigned request ID 5, processing request for the next 1 seconds
+Consumer 140495543916288: completed request ID 5 at time 1646872284
+Producer: produced request ID 6, length 6 seconds at time 1646872285
+Producer: sleeping for 2 seconds
+Consumer 1646872285: assigned request ID 6, processing request for the next 1 seconds
+Consumer 140495560701696: completed request ID 6 at time 1646872286
+Producer: produced request ID 7, length 7 seconds at time 1646872287
+Producer: sleeping for 2 seconds
+Consumer 1646872287: assigned request ID 7, processing request for the next 1 seconds
+Consumer 140495527130880: completed request ID 7 at time 1646872288
