@@ -10,11 +10,11 @@ Aalia Omarali
 ### Contrubutions 
 
 Riley: 
-all java code.
-all java design.
-java makefile 
-how to run java section in readme 
-99% c++ code
+all java code,
+all java design,
+java makefile, 
+how to run java section in readme, 
+99% c++ code,
 how to run c++ code 
 
 ### java:design
