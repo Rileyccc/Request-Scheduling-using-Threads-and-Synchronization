@@ -29,6 +29,15 @@ To run the java version first install the java development kit
 2. navigate from the project root directory to where the java code is using: cd java/src 
 3. To compile and run the java version of the project run: make -f makefile 
 
+
+The c++ design consists of 4 classes, Semaphore, Request, BoundedBuffer, and Main.
+
+The Semaphore class is a premade design taken from https://riptutorial.com/cplusplus/example/30142/semaphore-cplusplus-11 , which implements the use of semaphores. For this design, we utlize semaphores as opposed to Monitors.
+
+The Request class, like its java equivalent, is used to store simple information such as the requests id and its request time.
+
+The BoundedBuffer class 4 parts: The initailization, addRequest, removeRequest, and handleRequest. *TODO*
+
 To run the c++ version 
 1. navigate from project root directory to the c++ file using: cd c++
 2. run: g++ main.cpp -lpthread
