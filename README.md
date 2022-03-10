@@ -3,6 +3,17 @@
 Riley Clark
 
 
+
+Contrubutions 
+
+Riley: 
+all java code.
+all java design.
+java makefile 
+how to run java section in readme 
+99% c++ code
+how to run c++ code 
+
 java:design
 
 The java design consist of three classes Request, BoundedBuffer, and Main. 
@@ -16,4 +27,9 @@ The Main class makes a bounded buffer and then runs in an infinite loop creating
 To run the java version first install the java development kit
 1. run : sudo apt install openjdk-11-jdk
 2. navigate from the project root directory to where the java code is using: cd java/src 
-3. run: make -f makefile //to compile and run the java version of the project
+3. To compile and run the java version of the project run: make -f makefile 
+
+To run the c++ version 
+1. navigate from project root directory to the c++ file using: cd c++
+2. run: g++ main.cpp -lpthread
+3. run: ./a.out
