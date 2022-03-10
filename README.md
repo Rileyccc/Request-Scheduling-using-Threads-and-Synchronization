@@ -17,6 +17,9 @@ how to run java section in readme,
 99% c++ code,
 how to run c++ code 
 
+Aalia: 
+struggled severely on how to write the c++ producer code (designated section)
+
 ### java:design
 
 The java design consist of three classes Request, BoundedBuffer, and Main. 
