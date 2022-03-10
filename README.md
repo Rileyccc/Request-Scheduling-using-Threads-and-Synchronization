@@ -1,7 +1,9 @@
 # Request-Scheduling-using-Threads-and-Synchronization
 
 Riley Clark
+
 Reid Folk
+
 Aalia Omarali
 
 
